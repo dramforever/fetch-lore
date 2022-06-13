@@ -22,6 +22,7 @@ let
 in
 
 fetchurl ({
+  inherit name;
   url = "file://${builtins.toFile "empty-file" ""}";
   postFetch = ''
     PATH="$PATH:${lib.makeBinPath [ git b4 ]}" HOME=$TMPDIR \
