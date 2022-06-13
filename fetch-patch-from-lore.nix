@@ -32,5 +32,5 @@ fetchurl ({
   '';
 } // builtins.removeAttrs args [
   "outputHash" "outputHashAlgo" "md5" "sha1" "sha256" "sha512" "recursiveHash"
-  "messageId" "postFetch"
+  "messageId" "stripLen" "extraPrefix" "excludes" "postFetch"
 ])
